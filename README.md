@@ -14,5 +14,5 @@ You may crash into walls, discover new secrets and be transfigured. Find out Sol
   - PDF that is password locked.
 - Students are to create a PDF with the same SHA1 value and upload it onto the webpage to obtain the password to unlock the PDF.
 - The PDF contains:
-  - Hidden image *(using steganography)*: Image content are Babylonian cuneiform numerals that will give the key of 20211 after deciphering.
-  - Cipher text hidden within the metadata of the PDF: Cipher text to be decrypted using the key obtained from the image.
+  - Hidden image *(using steganography)*: Image content are Babylonian cuneiform numerals that will give the key of `20211` after deciphering.
+  - Cipher text hidden within the metadata of the PDF: Cipher text to be decrypted using the key obtained from the image to obtain the flag: `CTF{discretion_will_protect_you_and_understanding_will_guard_you}`.

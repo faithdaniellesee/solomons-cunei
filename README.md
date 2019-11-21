@@ -11,7 +11,7 @@ You may crash into walls, discover new secrets and be transfigured. Find out Sol
 ## Challenge outline:
 - Students are given:
   - PDF that is password locked.
-  - Webpage where they have to enter a hash value obtained using the Grøstl cryptographic hash function: `Please provide your proof of work, a Grøstl hash value ending in 16 bit's set to 0, it must be of length 21 bytes, starting with QN+yjqWfMwADrUsv.`
+  - Server to connect to via netcat on command line that will present them values N and e=3 and a base 64 ciphertext. They will then be tasked to decrypt the ciphertext either by low exponent attack or weak modulus attack. Choosing to use the low exponent attack will result in a partial plaintext recovery and the remaining characters will have to be brute forced.
     - An input of the correct hash value gives them the PDF password.
 - The PDF contains:
   - Hidden image *(using steganography)*: Image content is Babylonian cuneiform numerals that will give the key of `20211` after deciphering.

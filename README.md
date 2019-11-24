@@ -18,8 +18,8 @@ Bobby left a secret message for Alice within a pdf file and zipped it tight. Bob
 
 ## Challenge solution:
 1. Unlock 12-character passsword locked PDF
-    - Connect via netcat to server on command line where they will be given: values N, e = 3 & a base64 ciphertext, `c29sb21vbnJvY2tz`.
-    - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using low exponent / weak modulus attack)*:
+    - Connect via netcat to server on command line where they will be given: values N, e = 3 & a base64 ciphertext, `iegMRFmQmQ7a69yrb0JGbhUl6ydi6iHHIftbfVfOBx0=`.
+    - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using weak modulus attack)*:
       - Low exponent attack: Partial plaintext recovery of password where the remaining characters will have to be brute forced
       - Weak modulus attack
 2. Uncover hidden image in PDF *(using steganography)*:

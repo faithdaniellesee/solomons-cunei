@@ -11,7 +11,21 @@ You may crash into walls, discover new secrets and be transfigured. Find out Sol
 ## Challenge outline:
 - Students are given:
   - PDF that is password locked.
-  - Server to connect to via netcat on command line that will present them values N and e=3 and a base 64 ciphertext. They will then be tasked to decrypt the ciphertext either by low exponent attack or weak modulus attack. Choosing to use the low exponent attack will result in a partial plaintext recovery and the remaining characters will have to be brute forced (:
+  - Server to connect to via netcat on command line that will present them values N and e=3 and a base64 ciphertext that they will have to decipher to obtain the 12-character password to the PDF.
 - The PDF contains:
-  - Hidden image *(using steganography)*: Image content is Babylonian cuneiform numerals that will give the key of `20211` after deciphering.
-  - The ciphertext is hidden within the metadata of the PDF: Ciphertext (transposition cipher) to be decrypted using the key obtained from the image to obtain the flag: `CTF{discretion_will_protect_you_and_understanding_will_guard_you}`.
+  - Hidden image that needs to be found and deciphered. It will give the key to be used for on the next ciphertext after deciphering.
+  - Ciphertext hidden within the metadata of the PDF that will give the flag after deciphering.
+
+## Challenge solution:
+1. Unlock 12-character passsword locked PDF
+    - Connect via netcat to server on command line where they will be given: values N, e = 3 & a base64 ciphertext, `c29sb21vbnJvY2tz`.
+    - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using low exponent / weak modulus attack)*:
+      - Low exponent attack: Partial plaintext recovery of password where the remaining characters will have to be brute forced
+      - Weak modulus attack
+2. Uncover hidden image in PDF *(using steganography)*:
+    - Open the PDF file using Nano and uncomment `Contents` and `Resources` by removing the `%` sign.
+3. Decipher hidden image in PDF:
+    - Image of [Babylonian Cuneiform numerals](https://en.wikipedia.org/wiki/Babylonian_cuneiform_numerals#/media/File:Babylonian_numerals.svg) `5, 36, 51` which will be deciphered to give a key of `20211`.
+4. Uncover ciphertext `itioydrdiaucoleuntnldzrnpcadaggyzdewrtnenwuosiltousilrz` in PDF metadata under the `Author` field *(using transposition cipher)*.
+5. Use the key of `20211` to decrypt the ciphertext to obtain the plaintext `discretionwillprotectyouandunderstandingwillguardyouzzz`.
+    - The submitted flag can be either `CTF{discretionwillprotectyouandunderstandingwillguardyouzzz}` or `CTF{discretionwillprotectyouandunderstandingwillguardyou}`. 

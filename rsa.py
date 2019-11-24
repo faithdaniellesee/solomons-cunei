@@ -3,23 +3,19 @@ General RSA implementation: phi(n) = (p-1)(q-1)
 
 '''
 from base64 import b64encode, b64decode
-import primes_template as prime
-import math
 import gmpy2
 from gmpy2 import root
 
 e = 3
-# p = 302239968944794134660889979148054548249
-# q = 302239968944794134818677484631621172519 
+p = 302239968944794134660889979148054548249
+q = 302239968944794134818677484631621172519 
 
-p = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899026453
-q = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899027521
+# p = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899026453
+# q = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899027521
 
 def unpack_bigint(b):
     b=bytearray(b)
     return sum((1<<(bi*8))* bb for (bi,bb) in enumerate(b))
-
-
 
 def square_multiply(a,x,n):
     exponent = "{0:b}".format(x)
@@ -32,6 +28,7 @@ def square_multiply(a,x,n):
 
 def get_phi():
     return (p-1)*(q-1)
+
 def get_n():
     return p*q
 
@@ -59,9 +56,8 @@ def pack_bigint(i):
 
 def encrypt_message():
     d = mod_inv(e, get_phi())
-    message = "helloworldthis" #shitsucks"
+    message = "solomonrocks"
     long_int = unpack_bigint(message.encode('utf-8'))
-    print(long_int)
     print((long_int**3).bit_length() > get_n().bit_length())
     cipher = square_multiply(long_int,e,get_n())
     return b64encode(pack_bigint(cipher)).decode('utf-8')
@@ -73,17 +69,10 @@ def decrypt_message(message):
     decr = pack_bigint(decr).decode('utf-8')
     return decr
 
-# implement low exponent attack
-def attack(c,e,n):
-    m = root(c,e)
-    print(int(m))
-    m = pack_bigint(int(m)).decode('utf-8')
-    return m
-
 # retrieve p and q, calculate d and get the message
 def fermat_factor(n):
     assert n % 2 != 0
-    a = math
+    a = gmpy2.isqrt(n)
     b = gmpy2.square(a) - n
 
     while not gmpy2.is_square(b):
@@ -97,5 +86,6 @@ def fermat_factor(n):
 
 print(get_n())
 cipher = encrypt_message()
-m = attack(unpack_bigint(b64decode(cipher)),3,get_n())
-print(m)
+print(cipher)
+p,q = fermat_factor(get_n())
+print(p,q)

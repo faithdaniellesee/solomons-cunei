@@ -3,7 +3,7 @@
 ## Challenge solution:
 1. Unlock 12-character passsword locked zip file:
     - Connect via netcat to server on command line where they will be given: values N, e = 3 & a base64 ciphertext, `iegMRFmQmQ7a69yrb0JGbhUl6ydi6iHHIftbfVfOBx0=`.
-    - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using weak modulus attack)*.
+    - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using weak modulus attack)* by running the `rsa.py` file.
 2. Uncover hidden image in PDF *(using steganography)*:
     - Open the PDF file using Nano and uncomment `Contents` and `Resources` by removing the `%` sign.
 3. Decipher hidden image in PDF:

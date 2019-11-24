@@ -6,7 +6,7 @@
 - See Wan Yi Faith (1002851)
 
 ## Challenge description:
-You may crash into walls, discover new secrets and be transfigured. Find out Solomon's secret ;)  
+Bobby left a secret message for Alice within a pdf file and zipped it tight. Bobby's both a paelographer and HIGHLY skilled cryptographer, although he has a very bad habit of using weak prime numbers and hides his messages in streams? Retrieve the message as the flag in the format ```ctf{text}```.
 
 ## Challenge outline:
 - Students are given:

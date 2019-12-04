@@ -1,0 +1,7 @@
+RSA: Read up on weak modulus for RSA. 
+
+PDF: Read up on PDF structure and streams. Look around, does anything seem unusual?
+
+JPG: Read the job description CAREFULLY
+
+Solving cipher: Read up week 1-6 lecture slides.

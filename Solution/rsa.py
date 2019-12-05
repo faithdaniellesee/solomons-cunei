@@ -4,14 +4,12 @@ General RSA implementation: phi(n) = (p-1)(q-1)
 '''
 from base64 import b64encode, b64decode
 import gmpy2
-from gmpy2 import root
+from gmpy2 import root, invert
 
-e = 3
+e = 65537
 p = 302239968944794134660889979148054548249
-q = 302239968944794134818677484631621172519 
+q = 302239968944794134818677484631621172519
 
-# p = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899026453
-# q = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899027521
 
 def unpack_bigint(b):
     b=bytearray(b)
@@ -26,7 +24,7 @@ def square_multiply(a,x,n):
             res = (res*a)%n
     return res
 
-def get_phi():
+def get_phi(p,q):
     return (p-1)*(q-1)
 
 def get_n():
@@ -55,16 +53,16 @@ def pack_bigint(i):
 
 
 def encrypt_message():
-    d = mod_inv(e, get_phi())
+    phi = get_phi(p,q)
     message = "solomonrocks"
     long_int = unpack_bigint(message.encode('utf-8'))
-    print((long_int**3).bit_length() > get_n().bit_length())
+    # print((long_int**3).bit_length() > get_n().bit_length())
     cipher = square_multiply(long_int,e,get_n())
     return b64encode(pack_bigint(cipher)).decode('utf-8')
 
-def decrypt_message(message):
+def decrypt_message(message,p,q):
     cipher = b64decode(message)
-    d = mod_inv(e,get_phi())
+    d = mod_inv(e,get_phi(p,q))
     decr = square_multiply(unpack_bigint(cipher),d,get_n())
     decr = pack_bigint(decr).decode('utf-8')
     return decr
@@ -89,3 +87,5 @@ cipher = encrypt_message()
 print(cipher)
 p,q = fermat_factor(get_n())
 print(p,q)
+decr = decrypt_message(cipher,p,q)
+print(decr)

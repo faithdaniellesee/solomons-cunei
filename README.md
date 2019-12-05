@@ -22,8 +22,8 @@ Bobby left a secret message for Alice within a pdf file and zipped it tight with
 1. Unlock 12-character passsword locked zip file:
     - Using the given values in the `students_README.md`:
       - N = `91348998827750122993315803945306966072648090575002239502799599978804238369231`
-      - e = `3`
-      - A base64 ciphertext = `iegMRFmQmQ7a69yrb0JGbhUl6ydi6iHHIftbfVfOBx0=`
+      - e = `65537`
+      - A base64 ciphertext = `J04HMUs+IsiKuiTDb1zmRPPtgK7XOcp3H4kmGzZTJKo=`
     - Decrypt ciphertext to obtain the PDF plaintext password `solomonrocks` *(using weak modulus attack)* by running the `rsa.py` file.
 2. Uncover hidden image in PDF *(using steganography)*:
     - Open the PDF file using Nano and uncomment `Contents` and `Resources` by removing the `%` sign. (a hint was given to watch the saved file size as we found that certain text editors would add additional bytes to the PDF file)

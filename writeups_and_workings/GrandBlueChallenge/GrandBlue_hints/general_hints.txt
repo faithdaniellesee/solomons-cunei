@@ -1,0 +1,5 @@
+# Hints ordered by increasing value
+- Does the ciphertext reveal any potential information about the key?
+- Something in the files looks suspicious... maybe it contains a clue?
+- Are certain strings found in the plaintext that you can use?
+- Maybe the key is hidden among some other files

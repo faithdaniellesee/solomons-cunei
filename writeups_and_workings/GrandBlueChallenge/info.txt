@@ -1,0 +1,30 @@
+[Custom Encoding]
+4BitSubstitution
+5BitSubstitution [Grandma's Favourite] 
+6BitSubstitution
+7BitSubstitution
+8BitSubstitution [Jimmy's Favourite]
+9BitSubstitution
+10BitSubstitution
+11BitSubstitution
+12BitSubstitution
+13BitSubstitution [Roxas' Favourite]
+14BitSubstitution
+15BitSubstitution
+16BitSubstitution [Mum's Favourite]
+17BitSubstitution
+18BitSubstitution
+19BitSubstitution
+20BitSubstitution [Mrs Lee's Favourite]
+21BitSubstitution
+22BitSubstitution
+23BitSubstitution [Mrs Kentwood's Favourite]
+24BitSubstitution
+25BitSubstitution
+26BitSubstitution
+27BitSubstitution [Mrs Sng's Favourite]
+28BitSubstitution
+29BitSubstitution
+30BitSubstitution [The Girl Next Door's Favourite]
+31BitSubstitution
+32BitSubstitution [Dad's Favourite]

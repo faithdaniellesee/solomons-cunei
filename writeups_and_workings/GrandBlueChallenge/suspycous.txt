@@ -1,0 +1,78 @@
+B
+        ã   @   sü   d dl mZ d ZdZdZxÞedkr6edƒ eƒ Zeƒ  es‚edƒZe 	¡ dkrredƒ edd	ƒ ed
+ƒ dZd Znedƒ ed7 ZerÄesÄedƒZ
+e
+ 	¡ dkr´dZedƒ edƒ nedƒ ed7 Zereredƒ edƒ edƒ edƒ eƒ ZP qW dS )é    )ÚexitFé   zstop brute forcing pleasezFirst Level Authentication: Ú!grandmafavouritephoneisnokiaphonez&
+Well done Jimmy, here are some clues.zS
+The first 11 decoded characters in the file that contains the second password are z'the pw2 is 'z"
+62e1d82601d575061276645b983f8b29
+Tz
+Wrong password. Try again.é   zSecond Level Authentication: ÚgrandmalovesdialingnumberszC
+Omg Jimmy, you are getting better and better. Here are more clues!z!
+37b2279e9ba333fcbe9166c69757dcb5aJ  
+Ingredient List:
+bokcHOY
+rocKET
+ladyfingERS
+tomatOES -
+turNIP
+lIME
+sweetpotATO
+goURD
+onION
+spinACH
+mustARD
+mushroOMS
+radISH
+blueberrIES
+maNGO
+kIWI
+papAYA
+strawbeRRY
+watermeLON
+olIVE
+oraNGE
+waterchesNUT
+pEAR
+lycHEE
+cheESE
+mILK
+butTER
+milkcondenSED
+oATS
+rICE
+flOUR
+mueSLI
+beANS
+graPES
+shrIMP
+rosemARY
+lavenDER
+cinnaMON
+safRON
+nutMEG
+z›
+Recipe on how to Bake a Cake:
+a.	Get the essential ingredients
+b.	Prepare the ingredients
+c.	Mix the ingredients
+d.	Serve chilled with a strawberry on topu  
+3)	Extracting the Cake Essence:
+a.	Extract the essence of each ingredient in order.
+b.	Make sure you donâ€™t take a whole bite of the essence, just a little bit.
+c.    Send the essence to grandma! <3
+
+Please submit in this format: CTF{*Insert cake essence here*}u  
+
+
+Grandma's Note:
+Your parentsâ€™ and grandma are dying for some lovely cake. Grandma will bring some souvenirs back from Japan back for you, so be sure to bake some of grandmaâ€™s favourite cake then extract some cake essence string and send the essence to grandma by 12th December 2359 okay?
+
+
+If you need help on this essence you can always give grandma a call <3.
+
+Loves,
+
+GrandmaN)Úsysr   ÚctÚp1Úp2ÚprintÚinputÚzÚxÚlowerÚy© r   r   zsuspycous.pyÚ<module>   sB   
+
+

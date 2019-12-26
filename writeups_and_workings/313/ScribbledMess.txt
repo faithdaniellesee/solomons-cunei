@@ -1,0 +1,18 @@
+===============================================================================
+the Third Lab discovers the Maximum number of Deadly Sins in Skittles packs
+===============================================================================
+
+340878df7f4ad7dd0d92daf573a4eee0:keypart
+27bf0058af50fd43e46419d6324f0b88:number2
+9a2d8ce3ffdcdf2123bddd94d79ef200:decrypt
+25b03e7760efd3e8b9f81012fe2ba1f7:76thbvc
+b72fdf1a154aa566e40430106f59418b:rfvbnhy
+7d1f0faea8c9d7ee31b77a8ffe1e2706:ert4rfv
+59b2bf1d12e033b5cdec9ad04fad4742:yhnuikm
+
+76thbvcrfvbnhyert4rfvyhnuikm
+
+hashes: 
+1fc807f82dba0dd39176eb46bb74555d82a220ff555fc002801 f7d7aa684158b16d75075c201aca27ba8eb98478135e56b2074 453f900a388ff4e55e08da3175b1f8bae989dd55b560aadf5fd 1c87
+
+

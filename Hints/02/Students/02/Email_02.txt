@@ -1,0 +1,14 @@
+Hello friends,
+
+Our hint was meant to be very obvious and not another challenge in itself, but since it seems like it has been challenging, we will be more explicit. We wanted you guys to gain more experience with steganographic tools, so there is a file with a story embedded within the image. (The story is in the picture.) The accompanying password (highlight text) to access it was highlighted, and it's picture (highlight text).
+
+Once you've started to read the story, focus on the tree. We want to be like a tree, planted by the water~ 
+(If you need a little jingle, you can listen to this. As with the previous video, this video (insert video of Be Like a Tree) itself is not some kind of hint.)
+
+The funny thing is that the only devout ones are the three of us. The PDF in this version is a little less devout, and he serves any master once he is fixed. (Aka, not just Adobe). You can work with the previously devout one who only serves Adobe, or this guy, who serves any master after he is fixed. Same same~
+
+Still uwus, many sobbles and much whines along with very stressed cause it's week 13 and we have finals next week along with more assignments due over the next few days but CTF is difficult and people are cryptic and each challenge is sadly only worth 0.5% of our grade,
+
+GFCS
+
+P.S.: There's a small spelling error in Palaeography. It was not intentional and it won't affect anything. 
